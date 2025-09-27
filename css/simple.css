@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  text-align: center;
+  margin: 20px 0;
+}
+
+h2 {
+  font-size: 2em;
+  margin: 0;
+}
+
+body.animals main section,
+body.minerals main section,
+body.vegetables main section {
+  border: 1px solid #444;
+  margin: 10px auto;
+  padding: 15px;
+  width: 90%;
+  background-color: #fff;
+}
+
+body.animals main section h4,
+body.minerals main section h4,
+body.vegetables main section h4 {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+body.animals main section p,
+body.minerals main section p,
+body.vegetables main section p {
+  font-size: 14px;
+  text-align: center;
+  color: #000;
+  line-height: 1.5;
+}
+
+/* --- Animals responsiveness (width changes at breakpoints) --- */
+@media (min-width: 500px) {
+  body.animals main section {
+    width: 45%;
+    /* show 2 per row */
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width: 1000px) {
+  body.animals main section {
+    width: 22%;
+    /* show 4 per row */
+  }
+}
+
+/* --- Minerals responsiveness (background changes) --- */
+@media (min-width: 500px) {
+  body.minerals main section {
+    background-color: #f0f8ff;
+  }
+}
+
+@media (min-width: 1000px) {
+  body.minerals main section {
+    background-color: #e6ffe6;
+  }
+}
+
+/* --- Vegetables responsiveness (color & font size changes) --- */
+@media (min-width: 500px) {
+
+  body.vegetables main section h4,
+  body.vegetables main section p {
+    color: blue;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1000px) {
+
+  body.vegetables main section h4,
+  body.vegetables main section p {
+    color: green;
+    font-size: 16px;
+  }
+}
